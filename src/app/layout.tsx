@@ -5,6 +5,7 @@ import { Providers } from '@/providers';
 import { Toaster } from '@/components/ui/toaster';
 
 import '../styles/global.styles.css';
+import { Header } from './_components/header';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -34,10 +35,11 @@ export default async function RootLayout({ children }: WithChildren) {
       <body className={inter.className}>
         <Providers
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
           <Toaster />
         </Providers>
