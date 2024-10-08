@@ -15,7 +15,10 @@ import { cn } from '@/utils/cn.util';
 
 import { HeaderLink } from './header-link';
 
-function HeaderChildHoverCard(subLink: SubLinkWithLinks) {
+function HeaderChildHoverCard({
+  onClick,
+  ...subLink
+}: SubLinkWithLinks & { onClick: () => void }) {
   const [isHoverCardOpen, setIsHoverCardOpen] = useState<boolean>(false);
 
   return (
@@ -30,14 +33,18 @@ function HeaderChildHoverCard(subLink: SubLinkWithLinks) {
       </HoverCardTrigger>
       <HoverCardContent
         className="flex flex-col gap-2 items-start justify-center z-40"
-        align="end"
+        align="start"
+        sideOffset={2}
       >
         {subLink.links.map((link, linkIndex) => (
           <HeaderLink
             href={link.href || '#'}
             label={link.label}
             key={linkIndex}
-            onClick={() => setIsHoverCardOpen(false)}
+            onClick={() => {
+              setIsHoverCardOpen(false);
+              onClick();
+            }}
           />
         ))}
       </HoverCardContent>
@@ -62,10 +69,18 @@ export function HeaderParentHoverCard(parentLink: HeaderDataWithMenuLinks) {
         className={cn('min-w-64 w-full p-3 flex flex-col gap-4', {
           'justify-center items-center': parentLink.menuLinks.length === 1,
         })}
+        align="center"
+        sideOffset={24}
       >
         {parentLink.menuLinks.map((subLink, subIndex) => {
           if ('links' in subLink) {
-            return <HeaderChildHoverCard {...subLink} key={subIndex} />;
+            return (
+              <HeaderChildHoverCard
+                {...subLink}
+                onClick={() => setIsHoverCardOpen(false)}
+                key={subIndex}
+              />
+            );
           }
 
           return (

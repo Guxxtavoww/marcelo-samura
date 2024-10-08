@@ -5,8 +5,8 @@ import { HeaderParentHoverCard } from './header-hover-cards';
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 min-w-full h-20 px-3 flex justify-center items-center">
-      <div className="w-full max-w-screen-lg flex items-center justify-center gap-7">
+    <header className="fixed top-0 left-0 min-w-full h-20 px-3 flex justify-center items-center z-30 border-b bg-background">
+      <div className="w-full max-w-[1428px] flex items-center justify-center gap-7">
         {headerData.map((parentLink, parentIndex) => {
           if ('href' in parentLink) {
             return (

@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
-    --primary: 0 0% 9%;
+    --primary: 7, 66%, 39%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96.1%;
@@ -71,12 +71,24 @@
     @apply border-border;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
-    @apply bg-background text-foreground scroll-smooth relative antialiased min-h-svh overflow-x-hidden;
+    @apply bg-background text-foreground relative antialiased min-h-svh overflow-x-hidden;
   }
 
   img {
     @apply select-none block;
+  }
+
+  section.container-wrapper {
+    @apply w-full min-h-[calc(100svh-80px)] py-4 px-6 max-md:px-2;
+  }
+
+  p {
+    @apply text-[#545454];
   }
 }
 

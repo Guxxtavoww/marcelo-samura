@@ -28,27 +28,27 @@ export const headerData: HeaderData[] = [
     menuLinks: [
       {
         label: 'Pessoal - MP',
-        href: '#personal-mp',
+        href: '#mentory',
       },
       {
         label: 'Executiva (1 Sessão)- MEP',
-        href: '#mep',
+        href: '#mentory',
       },
       {
         label: 'Casais-MC',
-        href: '#couples-mc',
+        href: '#mentory',
       },
       {
         label: 'Grupo-MG',
-        href: '#group-mg',
+        href: '#mentory',
       },
       {
         label: 'Empresarial-ME',
-        href: '#company-me',
+        href: '#mentory',
       },
       {
         label: 'Pessoal Premium- MPP',
-        href: '#personal-permium',
+        href: '#mentory',
       },
     ],
   },
