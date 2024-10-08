@@ -1,5 +1,6 @@
 import { Banner } from './_containers/banner';
 import { MentoringProgram } from './_containers/mentoring-program';
+import { WillItWorkForMe } from './_containers/will-it-work-for-me';
 import { WhatIsSamuraMentorship } from './_containers/what-is-samura-mentorship';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <Banner />
         <MentoringProgram />
         <WhatIsSamuraMentorship />
+        <WillItWorkForMe />
       </div>
     </main>
   );
