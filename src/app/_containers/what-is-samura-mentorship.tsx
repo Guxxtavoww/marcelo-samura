@@ -18,7 +18,7 @@ function WhatIsSamuraMentorshipParagraph({
 export function WhatIsSamuraMentorship() {
   return (
     <section className="container-wrapper grid place-items-center">
-      <div className="flex items-center gap-4 justify-between flex-wrap max-md:justify-center">
+      <div className="flex items-center gap-8 justify-between flex-wrap max-md:justify-center">
         <motion.div
           className="flex flex-col gap-4 items-center flex-[1]"
           initial={{ opacity: 0, y: 50 }}
