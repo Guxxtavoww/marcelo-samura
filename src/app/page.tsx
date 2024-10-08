@@ -2,6 +2,7 @@ import { Banner } from './_containers/banner';
 import { MentoringProgram } from './_containers/mentoring-program';
 import { WillItWorkForMe } from './_containers/will-it-work-for-me';
 import { WhatIsSamuraMentorship } from './_containers/what-is-samura-mentorship';
+import { ParticipationWidget } from './_components/participation-widget';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <MentoringProgram />
         <WhatIsSamuraMentorship />
         <WillItWorkForMe />
+        <ParticipationWidget />
       </div>
     </main>
   );
