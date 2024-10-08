@@ -1,6 +1,9 @@
 export type ChildLink = { label: string; href?: string }[];
 
-export type SubLinkWithLinks = { label: string; links: ChildLink };
+export interface SubLinkWithLinks {
+  label: string;
+  links: ChildLink;
+}
 
 export type SubLink =
   | {
@@ -9,10 +12,10 @@ export type SubLink =
     }
   | SubLinkWithLinks;
 
-export type HeaderDataWithMenuLinks = {
+export interface HeaderDataWithMenuLinks {
   linkLabel: string;
   menuLinks: SubLink[];
-};
+}
 
 export type HeaderData =
   | { linkLabel: string; href: string; openInOtherWindow?: boolean }

@@ -1,10 +1,10 @@
 'use client';
 
-import { ElementRef, useRef } from 'react';
+import { type ElementRef, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
-import { mentoringProgramImage } from '@/assets';
 import { Button } from '@/components/ui/button';
+import { mentoringProgramImage } from '@/assets';
 
 export function MentoringProgram() {
   const ref = useRef<ElementRef<'section'>>(null);
@@ -26,14 +26,14 @@ export function MentoringProgram() {
       </motion.h2>
 
       <motion.p
-        className="text-center text-lg mb-10 max-w-fit"
+        className="text-center text-xl mb-10 max-w-fit"
         initial={{ opacity: 0, y: -20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       >
-        O programa de Mentoria Samura serve para qualquer pessoa que deseja
-        mudar a sua vida, utilizando as melhores ferramentas de desenvolvimento
-        pessoal e espiritual.
+        O programa de Mentoria Samura serve para qualquer pessoa que <br />{' '}
+        deseja mudar a sua vida, utilizando as melhores ferramentas de <br />{' '}
+        desenvolvimento pessoal e espiritual.
       </motion.p>
 
       <motion.div
