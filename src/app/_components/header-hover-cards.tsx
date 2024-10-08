@@ -62,7 +62,7 @@ export function HeaderParentHoverCard(parentLink: HeaderDataWithMenuLinks) {
       open={isHoverCardOpen}
       onOpenChange={setIsHoverCardOpen}
     >
-      <HoverCardTrigger className="text-lg font-medium !text-[#264653] !over:text-[#357a8a] cursor-pointer">
+      <HoverCardTrigger className="text-lg font-medium !text-[#264653] hover:text-[#357a8a] cursor-pointer">
         {parentLink.linkLabel}
       </HoverCardTrigger>
       <HoverCardContent

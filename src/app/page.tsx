@@ -1,5 +1,6 @@
 import { Banner } from './_containers/banner';
 import { MentoringProgram } from './_containers/mentoring-program';
+import { WhatIsSamuraMentorship } from './_containers/what-is-samura-mentorship';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="mx-auto w-full max-w-[1428px]">
         <Banner />
         <MentoringProgram />
+        <WhatIsSamuraMentorship />
       </div>
     </main>
   );

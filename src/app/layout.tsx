@@ -10,7 +10,7 @@ import { Header } from './_components/header';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Marcelo Samura',
+  title: 'Marcello Samura',
   description: 'An App description',
   keywords: ['treinamento'],
   authors: [

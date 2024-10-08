@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 
 export function MentoringProgram() {
   const ref = useRef<ElementRef<'section'>>(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
+  const isInView = useInView(ref, { once: false, margin: '-50px' });
 
   return (
     <section
@@ -54,17 +54,17 @@ export function MentoringProgram() {
             isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
           }
           transition={{ duration: 1, ease: 'easeOut' }}
-          className="rounded-sm"
+          className="rounded-sm shadow-xl"
         />
       </motion.div>
 
       <motion.div
-        className="w-full flex justify-center items-start flex-col gap-3"
+        className="w-full flex justify-center items-start flex-col gap-3 max-md:items-center"
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
       >
-        <p className="max-w-screen-md">
+        <p className="max-w-screen-sm max-md:text-center">
           INSCREVA-SE ABAIXO PARA RECEBER CONTEÚDOS DE DESENVOVIMENTO PESSOAL E
           ESPIRITUAL SOBRE COMO VOCÊ PODE TRANSFORMAR A SUA VIDA
         </p>
