@@ -27,6 +27,8 @@ export function HeaderLink({
           className
         )}
         onClick={onClick}
+        smooth={true}
+        offset={0}
       >
         {label}
       </ScrollLink>
