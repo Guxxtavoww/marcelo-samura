@@ -84,7 +84,7 @@
   }
 
   section.container-wrapper {
-    @apply w-full min-h-[calc(100svh-80px)] py-5 max-md:px-2;
+    @apply w-full min-h-[calc(100svh-140px)] py-5 max-md:px-2;
   }
 
   .section-heading {

@@ -15,7 +15,7 @@ import { FaWhatsapp } from 'react-icons/fa6';
 export function HowDoesItWork() {
   return (
     <motion.section
-      className="container-wrapper space-y-10 text-center"
+      className="container-wrapper space-y-10 text-center mb-10"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.2 }}
@@ -34,7 +34,7 @@ export function HowDoesItWork() {
       <Accordion type="multiple" className="w-full">
         {howDoesItWorkData.map((item, index) => (
           <AccordionItem value={item.title} key={index}>
-            <AccordionTrigger className="text-[#a73520] text-lg font-semibold">
+            <AccordionTrigger className="text-[#a73520] text-lg font-semibold justify-center gap-3">
               {item.title}
             </AccordionTrigger>
             <motion.div

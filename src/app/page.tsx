@@ -8,7 +8,7 @@ import { WhatIsSamuraMentorship } from './_containers/what-is-samura-mentorship'
 
 export default function Home() {
   return (
-    <main className="absolute top-20 left-0 w-full min-h-[calc(100svh-80px)]" id="#">
+    <main className="absolute top-[140px] left-0 w-full" id="#">
       <div className="mx-auto w-full max-w-[1428px]">
         <Banner />
         <MentoringProgram />

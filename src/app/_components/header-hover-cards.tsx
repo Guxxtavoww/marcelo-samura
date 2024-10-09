@@ -34,7 +34,7 @@ function HeaderChildHoverCard({
       <HoverCardContent
         className="flex flex-col gap-2 items-start justify-center z-40"
         align="start"
-        sideOffset={2}
+        sideOffset={4}
       >
         {subLink.links.map((link, linkIndex) => (
           <HeaderLink
@@ -70,7 +70,7 @@ export function HeaderParentHoverCard(parentLink: HeaderDataWithMenuLinks) {
           'justify-center items-center': parentLink.menuLinks.length === 1,
         })}
         align="center"
-        sideOffset={24}
+        sideOffset={8}
       >
         {parentLink.menuLinks.map((subLink, subIndex) => {
           if ('links' in subLink) {

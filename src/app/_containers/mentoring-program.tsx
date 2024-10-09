@@ -59,7 +59,7 @@ export function MentoringProgram() {
       </motion.div>
 
       <motion.div
-        className="w-full flex justify-center items-center flex-col gap-3 max-md:items-center pl-5 mb-7"
+        className="w-full flex justify-center items-center flex-col gap-3 max-md:items-center mb-7"
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
