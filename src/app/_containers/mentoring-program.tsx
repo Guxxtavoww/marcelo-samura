@@ -37,15 +37,15 @@ export function MentoringProgram() {
       </motion.p>
 
       <motion.div
-        className="w-full flex items-center justify-between gap-10 mb-8 flex-wrap max-md:justify-center"
+        className="w-full flex items-center justify-center gap-6 mb-8 flex-wrap max-md:justify-center"
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       >
-        <p className="text-2xl text-justify font-bold max-w-[500px]">
-          Desvendar a Si Mesmo! Este é o único trabalho para uma alma
+        <p className="text-2xl text-center font-extrabold max-w-[500px]">
+          Desvendar a Si Mesmo! <br /> Este é o único trabalho para uma alma
           transformar a sua jornada de vida <br />
-          <span className="text-xl font-normal">- Marcello Samura</span>
+          <span className="text-xl font-normal">Marcello Samura</span>
         </p>
         <motion.img
           src={mentoringProgramImage.src}
@@ -59,17 +59,17 @@ export function MentoringProgram() {
       </motion.div>
 
       <motion.div
-        className="w-full flex justify-center items-start flex-col gap-3 max-md:items-center"
+        className="w-full flex justify-center items-center flex-col gap-3 max-md:items-center pl-5 mb-7"
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
       >
-        <p className="max-w-screen-sm max-md:text-center">
-          INSCREVA-SE ABAIXO PARA RECEBER CONTEÚDOS DE DESENVOVIMENTO PESSOAL E
+        <p className="text-center">
+          INSCREVA-SE ABAIXO PARA RECEBER CONTEÚDOS DE DESENVOVIMENTO PESSOAL E <br />
           ESPIRITUAL SOBRE COMO VOCÊ PODE TRANSFORMAR A SUA VIDA
         </p>
-        <Button>QUERO RECEBER</Button>
       </motion.div>
+      <Button className="mx-auto text-xl" size="lg">QUERO RECEBER</Button>
     </section>
   );
 }
