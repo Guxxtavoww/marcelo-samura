@@ -38,7 +38,7 @@ export function WillItWorkForMe() {
               }
             )}
             initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
           >
             <motion.img
@@ -50,7 +50,7 @@ export function WillItWorkForMe() {
             <motion.h3
               className="text-[#a73520] text-2xl text-center font-bold"
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
               {item.title}
@@ -58,7 +58,7 @@ export function WillItWorkForMe() {
             <motion.p
               className="text-lg leading-9 text-center font-medium"
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
               {item.description}

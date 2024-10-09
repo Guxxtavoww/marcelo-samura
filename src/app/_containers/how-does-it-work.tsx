@@ -9,8 +9,8 @@ import {
   AccordionContent,
 } from '@/components/ui/accordion';
 import { howDoesItWorkData } from '@/data/how-does-it-work.data';
-import { Button } from '@/components/ui/button';
-import { FaWhatsapp } from 'react-icons/fa6';
+
+import { WantToParticipateButton } from '../_components/want-to-participate-button';
 
 export function HowDoesItWork() {
   return (
@@ -65,9 +65,7 @@ export function HowDoesItWork() {
         sucesso e a realização que você sempre sonhou.
       </motion.p>
 
-      <Button size="lg" className="text-xl">
-        QUERO PARTICIPAR <FaWhatsapp />
-      </Button>
+      <WantToParticipateButton />
     </motion.section>
   );
 }

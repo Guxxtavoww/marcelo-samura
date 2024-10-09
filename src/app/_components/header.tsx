@@ -23,7 +23,7 @@ export function Header() {
         >
           <Image src="/logo.png" alt="Logo" width={200} height={80} priority />
         </button>
-        <div className="flex items-center justify-center gap-7 flex-wrap">
+        <div className="flex items-center justify-center gap-10 flex-wrap w-full">
           {headerData.map((parentLink, parentIndex) => {
             if ('href' in parentLink) {
               return (
