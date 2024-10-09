@@ -8,11 +8,10 @@ export function WillItWorkForMe() {
   return (
     <section className="container-wrapper flex flex-col gap-6 items-center">
       <motion.h2
-        className="text-[#264653] text-4xl font-bold text-center"
+        className="section-heading"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
       >
         A MENTORIA SAMURA FUNCIONA PRA MIM?
       </motion.h2>
@@ -22,7 +21,6 @@ export function WillItWorkForMe() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true }}
       >
         A Mentoria Samura serve para qualquer pessoa que deseja dominar as
         ferramentas de <br /> autoconhecimento e sobre a espiritualidade para
@@ -42,7 +40,6 @@ export function WillItWorkForMe() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            viewport={{ once: true }}
           >
             <motion.img
               src={item.iconSrc}
@@ -55,7 +52,6 @@ export function WillItWorkForMe() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              viewport={{ once: true }}
             >
               {item.title}
             </motion.h3>
@@ -64,7 +60,6 @@ export function WillItWorkForMe() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              viewport={{ once: true }}
             >
               {item.description}
             </motion.p>

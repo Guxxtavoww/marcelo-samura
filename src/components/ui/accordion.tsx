@@ -24,10 +24,16 @@ const AccordionItem = forwardRef<
 ));
 AccordionItem.displayName = 'AccordionItem';
 
+type AccordionTriggerProps = ComponentPropsWithoutRef<
+  typeof AccordionPrimitive.Trigger
+> & {
+  hideChevronIcon?: boolean;
+};
+
 const AccordionTrigger = forwardRef<
   ElementRef<typeof AccordionPrimitive.Trigger>,
-  ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
+  AccordionTriggerProps
+>(({ className, children, hideChevronIcon, ...props }, ref) => (
   <AccordionPrimitive.Header className="flex">
     <AccordionPrimitive.Trigger
       ref={ref}
@@ -38,7 +44,9 @@ const AccordionTrigger = forwardRef<
       {...props}
     >
       {children}
-      <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+      {!hideChevronIcon ? (
+        <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+      ) : null}
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));

@@ -31,7 +31,7 @@ export const headerData: HeaderData[] = [
     menuLinks: [
       {
         label: 'Pessoal - MP',
-        href: '#mentory',
+        href: '#personal-mentory-mp',
       },
       {
         label: 'Executiva (1 Sessão)- MEP',

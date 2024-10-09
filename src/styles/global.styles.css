@@ -87,6 +87,10 @@
     @apply w-full min-h-[calc(100svh-80px)] py-5 max-md:px-2;
   }
 
+  .section-heading {
+    @apply text-4xl font-bold text-[#264653] text-center
+  }
+
   p {
     @apply text-[#545454];
   }

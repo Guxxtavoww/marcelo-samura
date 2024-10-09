@@ -25,7 +25,7 @@ export function WhatIsSamuraMentorship() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <h2 className="text-[#264653] text-4xl text-center font-bold">
+          <h2 className="section-heading">
             O QUE É A MENTORIA SAMURA?
           </h2>
           <WhatIsSamuraMentorshipParagraph>

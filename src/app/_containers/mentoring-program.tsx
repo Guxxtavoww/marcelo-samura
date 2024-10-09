@@ -17,7 +17,7 @@ export function MentoringProgram() {
       id="mentory"
     >
       <motion.h2
-        className="text-3xl text-[#264653] font-bold text-center mb-3"
+        className="section-heading mb-3"
         initial={{ opacity: 0, y: -30 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
