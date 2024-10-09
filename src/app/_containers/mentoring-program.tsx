@@ -14,7 +14,7 @@ export function MentoringProgram() {
     <section
       className="container-wrapper flex flex-col items-center"
       ref={ref}
-      id="mentory"
+      id="mentory-program"
     >
       <motion.h2
         className="section-heading mb-3"

@@ -8,10 +8,7 @@ import { Button } from '@/components/ui/button';
 
 export function Banner() {
   return (
-    <section
-      id="#"
-      className="container-wrapper grid grid-cols-2 gap-1.5 place-items-center max-md:grid-cols-1"
-    >
+    <section className="container-wrapper grid grid-cols-2 gap-1.5 place-items-center max-md:grid-cols-1">
       <motion.div
         className="flex flex-col gap-2 items-start max-md:items-center"
         initial={{ opacity: 0, y: 50 }}

@@ -6,7 +6,7 @@ import { willItWorkFormMeData } from '@/data/will-it-work-for-me.data';
 
 export function WillItWorkForMe() {
   return (
-    <section className="container-wrapper flex flex-col gap-6 items-center">
+    <section className="container-wrapper flex flex-col gap-6 items-center" id="will-it-work-for-me">
       <motion.h2
         className="section-heading"
         initial={{ opacity: 0, y: -50 }}

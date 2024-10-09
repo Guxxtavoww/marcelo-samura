@@ -21,7 +21,7 @@ export function Header() {
             router.replace('/');
           }}
         >
-          <Image src="/logo.png" alt="Logo" width={200} height={80} />
+          <Image src="/logo.png" alt="Logo" width={200} height={80} priority />
         </button>
         <div className="flex items-center justify-center gap-7 flex-wrap">
           {headerData.map((parentLink, parentIndex) => {
@@ -32,6 +32,7 @@ export function Header() {
                   label={parentLink.linkLabel}
                   className="text-lg"
                   key={parentIndex}
+                  openOnAnotherWindow={parentLink.openInOtherWindow}
                 />
               );
             }

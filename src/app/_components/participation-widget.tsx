@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa6';
 
 export function ParticipationWidget() {
   return (
-    <section className="w-full rounded-md bg-[#a73520] p-8 sm:p-10 my-5 text-center">
+    <section id="participation-widget" className="w-full rounded-md bg-[#a73520] p-8 sm:p-10 my-5 text-center">
       <h2 className="text-white text-2xl font-bold mb-4 leading-tight">
         COMO POSSO PARTICIPAR?
       </h2>

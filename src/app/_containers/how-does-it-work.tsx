@@ -15,6 +15,7 @@ import { FaWhatsapp } from 'react-icons/fa6';
 export function HowDoesItWork() {
   return (
     <motion.section
+      id="how-does-it-work"
       className="container-wrapper space-y-10 text-center mb-10"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}

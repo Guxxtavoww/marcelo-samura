@@ -11,14 +11,16 @@ export function HeaderLink({
   className,
   onClick,
   type = 'scroll',
+  openOnAnotherWindow,
 }: {
   label: string;
   href: string;
   className?: string;
   onClick?: () => void;
   type?: 'scroll' | 'link';
+  openOnAnotherWindow?: boolean;
 }) {
-  if (type === 'link') {
+  if (type === 'scroll') {
     return (
       <ScrollLink
         to={href}
@@ -26,9 +28,8 @@ export function HeaderLink({
           'font-medium text-[#264653] cursor-pointer hover:text-[#357a8a] transition-all',
           className
         )}
+        smooth
         onClick={onClick}
-        smooth={true}
-        offset={0}
       >
         {label}
       </ScrollLink>
@@ -43,6 +44,7 @@ export function HeaderLink({
         className
       )}
       onClick={onClick}
+      target={openOnAnotherWindow ? '_blank' : undefined}
     >
       {label}
     </Link>

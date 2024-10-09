@@ -8,16 +8,17 @@ import { WhatIsSamuraMentorship } from './_containers/what-is-samura-mentorship'
 
 export default function Home() {
   return (
-    <main className="absolute top-[140px] left-0 w-full" id="#">
-      <div className="mx-auto w-full max-w-[1428px]">
-        <Banner />
-        <MentoringProgram />
-        <WhatIsSamuraMentorship />
-        <WillItWorkForMe />
-        <ParticipationWidget />
-        <HowDoesItWork />
-        <PersonalMentoryMp />
-      </div>
+    <main
+      id="#"
+      className="absolute top-[140px] left-1/2 -translate-x-1/2 w-full max-w-[1428px] px-3 max-md:px-1.5"
+    >
+      <Banner />
+      <MentoringProgram />
+      <WhatIsSamuraMentorship />
+      <WillItWorkForMe />
+      <ParticipationWidget />
+      <HowDoesItWork />
+      <PersonalMentoryMp />
     </main>
   );
 }
