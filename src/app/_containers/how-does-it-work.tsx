@@ -35,7 +35,7 @@ export function HowDoesItWork() {
       <Accordion type="multiple" className="w-full">
         {howDoesItWorkData.map((item, index) => (
           <AccordionItem value={item.title} key={index}>
-            <AccordionTrigger className="text-[#a73520] text-lg font-semibold justify-center gap-3">
+            <AccordionTrigger className="text-[#a73520] text-lg font-semibold">
               {item.title}
             </AccordionTrigger>
             <motion.div

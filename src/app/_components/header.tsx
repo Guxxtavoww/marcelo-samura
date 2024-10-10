@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 
 import { headerData } from '@/data/header.data';
@@ -12,7 +13,12 @@ export function Header() {
   const router = useRouter();
 
   return (
-    <header className="fixed top-0 left-0 min-w-full h-[140px] gap-1.5 px-5 flex justify-center items-center z-30 border-b bg-background max-md:px-2 max-md:h-fit">
+    <motion.header
+      className="fixed top-0 left-0 min-w-full h-[140px] gap-1.5 px-5 flex justify-center items-center z-30 border-b bg-background max-md:px-2 max-md:h-fit"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="mx-auto w-full max-w-[1428px] flex flex-col items-center">
         <button
           className="cursor-pointer"
@@ -41,6 +47,6 @@ export function Header() {
           })}
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
