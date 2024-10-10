@@ -2,6 +2,7 @@ import { Banner } from './_containers/banner';
 import { HowDoesItWork } from './_containers/how-does-it-work';
 import { MentoringProgram } from './_containers/mentoring-program';
 import { WillItWorkForMe } from './_containers/will-it-work-for-me';
+import { CouplesMentoryMC } from './_containers/couples-mentory-mc';
 import { PersonalMentoryMp } from './_containers/personal-mentory-mp';
 import { ParticipationWidget } from './_components/participation-widget';
 import { WhatIsSamuraMentorship } from './_containers/what-is-samura-mentorship';
@@ -21,6 +22,7 @@ export default function Home() {
       <HowDoesItWork />
       <PersonalMentoryMp />
       <WhoIsPersonalMentorshipFor />
+      <CouplesMentoryMC />
     </main>
   );
 }

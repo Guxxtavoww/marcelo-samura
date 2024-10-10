@@ -15,6 +15,7 @@ import mentoriaPessoalImage1 from './pngs/mentoria-pessoal-image-1.png';
 import mentoriaPessoalImage2 from './pngs/mentoria-pessoal-image-2.png';
 import mentoriaPessoalImage3 from './pngs/mentoria-pessoal-image-3.png';
 import whoIsSamuraMentoryImage from './pngs/who-is-samura-mentory-image.png';
+import mentoriaParaCasalImage1 from './pngs/mentoria-para-casal-image-1.png';
 
 export {
   mentoringProgramImage,
@@ -34,4 +35,5 @@ export {
   mentoriaPessoalImage1,
   mentoriaPessoalImage2,
   mentoriaPessoalImage3,
+  mentoriaParaCasalImage1,
 };
