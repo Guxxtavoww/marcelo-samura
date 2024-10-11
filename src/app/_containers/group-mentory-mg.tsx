@@ -4,7 +4,7 @@ import { WantToParticipateButton } from "../_components/want-to-participate-butt
 
 export function GroupMentoryMG() {
   return (
-    <section className="container-wrapper space-y-5 text-center">
+    <section className="container-wrapper space-y-5 text-center" id="group-mentory-mg">
       <h2 className="section-heading">MENTORIA EM GRUPO- MG</h2>
       <p className="font-medium text-lg">
         Desenvolvimento Pessoal e Espiritual

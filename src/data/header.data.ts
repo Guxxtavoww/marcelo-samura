@@ -43,7 +43,7 @@ export const headerData: HeaderData[] = [
       },
       {
         label: 'Grupo-MG',
-        href: '#mentory',
+        href: '#group-mentory-mg',
       },
       {
         label: 'Empresarial-ME',
