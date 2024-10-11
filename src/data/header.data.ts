@@ -47,7 +47,7 @@ export const headerData: HeaderData[] = [
       },
       {
         label: 'Empresarial-ME',
-        href: '#mentory',
+        href: '#business-mentoring-me',
       },
       {
         label: 'Pessoal Premium- MPP',

@@ -17,6 +17,10 @@ import mentoriaPessoalImage3 from './pngs/mentoria-pessoal-image-3.png';
 import whoIsSamuraMentoryImage from './pngs/who-is-samura-mentory-image.png';
 import mentoriaParaCasalImage1 from './pngs/mentoria-para-casal-image-1.png';
 import mentoriaParaCasalImage2 from './pngs/mentoria-para-casal-image-2.png';
+import mentoriaEmGrupoImage1 from './pngs/mentoria-em-grupo-image-1.png';
+import mentoriaEmGrupoImage2 from './pngs/mentoria-em-grupo-image-2.png';
+import mentoriaEmpresarialImage1 from './pngs/mentoria-empresarial-image-1.png';
+import mentoriaEmpresarialImage2 from './pngs/mentoria-empresarial-image-2.png';
 
 export {
   mentoringProgramImage,
@@ -38,4 +42,8 @@ export {
   mentoriaPessoalImage3,
   mentoriaParaCasalImage1,
   mentoriaParaCasalImage2,
+  mentoriaEmGrupoImage1,
+  mentoriaEmGrupoImage2,
+  mentoriaEmpresarialImage1,
+  mentoriaEmpresarialImage2,
 };

@@ -6,6 +6,7 @@ import { WillItWorkForMe } from './_containers/will-it-work-for-me';
 import { CouplesMentoryMC } from './_containers/couples-mentory-mc';
 import { PersonalMentoryMp } from './_containers/personal-mentory-mp';
 import { ParticipationWidget } from './_components/participation-widget';
+import { BusinessMentoringME } from './_containers/business-mentoring-me';
 import { WhatIsSamuraMentorship } from './_containers/what-is-samura-mentorship';
 import { WhoIsPersonalMentorshipFor } from './_containers/who-is-personal-mentorship-for';
 
@@ -22,6 +23,7 @@ export default function Home() {
       <WhoIsPersonalMentorshipFor />
       <CouplesMentoryMC />
       <GroupMentoryMG />
+      <BusinessMentoringME />
     </main>
   );
 }
