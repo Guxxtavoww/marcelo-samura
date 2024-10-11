@@ -16,7 +16,7 @@ import { whoIsPersonalMentorshipForData } from '@/data/who-is-personal-mentorshi
 
 import { WantToParticipateButton } from '../_components/want-to-participate-button';
 
-function BuyNowWidget({
+export function BuyNowWidget({
   href,
   className,
 }: {

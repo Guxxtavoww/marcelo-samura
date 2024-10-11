@@ -1,4 +1,5 @@
 import { Banner } from './_containers/banner';
+import { GroupMentoryMG } from './_containers/group-mentory-mg';
 import { HowDoesItWork } from './_containers/how-does-it-work';
 import { MentoringProgram } from './_containers/mentoring-program';
 import { WillItWorkForMe } from './_containers/will-it-work-for-me';
@@ -10,10 +11,7 @@ import { WhoIsPersonalMentorshipFor } from './_containers/who-is-personal-mentor
 
 export default function Home() {
   return (
-    <main
-      id="#"
-      className="absolute top-[140px] left-1/2 -translate-x-1/2 w-full max-w-[1428px] px-3 max-md:px-1.5"
-    >
+    <main className="absolute top-[140px] left-1/2 -translate-x-1/2 w-full max-w-[1428px] px-3 max-md:px-1.5">
       <Banner />
       <MentoringProgram />
       <WhatIsSamuraMentorship />
@@ -23,6 +21,7 @@ export default function Home() {
       <PersonalMentoryMp />
       <WhoIsPersonalMentorshipFor />
       <CouplesMentoryMC />
+      <GroupMentoryMG />
     </main>
   );
 }

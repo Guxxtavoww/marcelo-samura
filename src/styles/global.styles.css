@@ -68,11 +68,7 @@
 
 @layer base {
   * {
-    @apply border-border;
-  }
-
-  html {
-    @apply scroll-smooth;
+    @apply border-border scroll-smooth;
   }
 
   body {
@@ -85,10 +81,11 @@
 
   section.container-wrapper {
     @apply w-full min-h-[calc(100svh-140px)] py-5 max-md:px-2;
+    scroll-margin-top: 140px;
   }
 
   .section-heading {
-    @apply text-4xl font-bold text-[#264653] text-center
+    @apply text-4xl font-bold text-[#264653] text-center;
   }
 
   p {

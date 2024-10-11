@@ -38,17 +38,9 @@ export function HowDoesItWork() {
             <AccordionTrigger className="text-[#a73520] text-lg font-semibold">
               {item.title}
             </AccordionTrigger>
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              whileInView={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
-              transition={{ duration: 0.5 }}
-            >
-              <AccordionContent className="text-base font-medium">
-                {item.description}
-              </AccordionContent>
-            </motion.div>
+            <AccordionContent className="text-base font-medium">
+              {item.description}
+            </AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>
