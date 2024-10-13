@@ -51,7 +51,7 @@ export const headerData: HeaderData[] = [
       },
       {
         label: 'Pessoal Premium- MPP',
-        href: '#mentory',
+        href: '#premium-personal-mentory-mpp',
       },
     ],
   },

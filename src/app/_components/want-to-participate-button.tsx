@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 export function WantToParticipateButton({ className }: { className?: string }) {
   return (
-    <Button size="lg" className={cn('text-xl', className)}>
+    <Button size="lg" className={cn('text-xl fade-in-10', className)}>
       QUERO PARTICIPAR <FaWhatsapp />
     </Button>
   );

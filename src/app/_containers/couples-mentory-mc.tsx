@@ -97,7 +97,7 @@ export function CouplesMentoryMC() {
           alt="Mentoria para casal image 2"
           whileInView={{ opacity: [0, 1], x: [-100, 0] }}
           transition={{ duration: 0.8 }}
-        />
+          className="rounded-md shadow-lg"        />
         <motion.div
           className="text-center space-y-4 flex-[1]"
           whileInView={{ opacity: [0, 1], y: [50, 0] }}
