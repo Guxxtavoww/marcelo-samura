@@ -6,7 +6,10 @@ import { willItWorkFormMeData } from '@/data/will-it-work-for-me.data';
 
 export function WillItWorkForMe() {
   return (
-    <section className="container-wrapper flex flex-col gap-6 items-center" id="will-it-work-for-me">
+    <section
+      className="container-wrapper flex flex-col gap-6 items-center"
+      id="will-it-work-for-me"
+    >
       <motion.h2
         className="section-heading"
         initial={{ opacity: 0, y: -50 }}
@@ -37,9 +40,10 @@ export function WillItWorkForMe() {
                 'col-span-2': arr.length - 1 === index,
               }
             )}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
           >
             <motion.img
               src={item.iconSrc}
@@ -47,22 +51,12 @@ export function WillItWorkForMe() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
             />
-            <motion.h3
-              className="text-[#a73520] text-2xl text-center font-bold"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-            >
+            <h3 className="text-[#a73520] text-2xl text-center font-bold">
               {item.title}
-            </motion.h3>
-            <motion.p
-              className="text-lg leading-9 text-center font-medium"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-            >
+            </h3>
+            <p className="text-lg leading-9 text-center font-medium">
               {item.description}
-            </motion.p>
+            </p>
           </motion.div>
         ))}
       </div>

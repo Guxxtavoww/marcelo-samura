@@ -54,7 +54,7 @@ export function CouplesMentoryMC() {
       </motion.div>
 
       <motion.div
-        className="grid grid-cols-2 gap-2 place-items-center mb-10"
+        className="grid grid-cols-2 gap-2 place-items-center mb-10 max-md:grid-cols-1"
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.6, delay: 0.3 }}
@@ -91,13 +91,14 @@ export function CouplesMentoryMC() {
         Separação! Você gostaria de ter alguém que pudesse compartilhar...?
       </motion.h3>
 
-      <div className="w-full flex items-center gap-3.5 mb-10">
+      <div className="w-full flex items-center gap-3.5 mb-10 max-md:flex-col">
         <motion.img
           src={mentoriaParaCasalImage2.src}
           alt="Mentoria para casal image 2"
           whileInView={{ opacity: [0, 1], x: [-100, 0] }}
           transition={{ duration: 0.8 }}
-          className="rounded-md shadow-lg"        />
+          className="rounded-md shadow-lg"
+        />
         <motion.div
           className="text-center space-y-4 flex-[1]"
           whileInView={{ opacity: [0, 1], y: [50, 0] }}

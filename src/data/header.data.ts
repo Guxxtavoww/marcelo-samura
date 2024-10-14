@@ -120,6 +120,10 @@ export const headerData: HeaderData[] = [
     ],
   },
   {
+    linkLabel: 'Testemunhos',
+    href: '#testemonials'
+  },
+  {
     linkLabel: 'Quem Sou Eu',
     menuLinks: [
       {

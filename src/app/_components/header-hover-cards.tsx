@@ -52,7 +52,10 @@ function HeaderChildHoverCard({
   );
 }
 
-export function HeaderParentHoverCard(parentLink: HeaderDataWithMenuLinks) {
+export function HeaderParentHoverCard({
+  onLinksClick,
+  ...parentLink
+}: HeaderDataWithMenuLinks & { onLinksClick?: () => void }) {
   const [isHoverCardOpen, setIsHoverCardOpen] = useState<boolean>(false);
 
   return (
@@ -77,7 +80,10 @@ export function HeaderParentHoverCard(parentLink: HeaderDataWithMenuLinks) {
             return (
               <HeaderChildHoverCard
                 {...subLink}
-                onClick={() => setIsHoverCardOpen(false)}
+                onClick={() => {
+                  setIsHoverCardOpen(false);
+                  onLinksClick?.();
+                }}
                 key={subIndex}
               />
             );
@@ -88,7 +94,10 @@ export function HeaderParentHoverCard(parentLink: HeaderDataWithMenuLinks) {
               href={subLink.href || '#'}
               label={subLink.label}
               key={subIndex}
-              onClick={() => setIsHoverCardOpen(false)}
+              onClick={() => {
+                setIsHoverCardOpen(false);
+                onLinksClick?.();
+              }}
             />
           );
         })}

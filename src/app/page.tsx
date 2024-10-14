@@ -10,6 +10,7 @@ import { BusinessMentoringME } from './_containers/business-mentoring-me';
 import { WhatIsSamuraMentorship } from './_containers/what-is-samura-mentorship';
 import { WhoIsPersonalMentorshipFor } from './_containers/who-is-personal-mentorship-for';
 import { PremiumPersonalMentoryMPP } from './_containers/premium-personal-mentory-mpp';
+import { Testemonials } from './_containers/testemonials';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <GroupMentoryMG />
       <BusinessMentoringME />
       <PremiumPersonalMentoryMPP />
+      <Testemonials />
     </main>
   );
 }
