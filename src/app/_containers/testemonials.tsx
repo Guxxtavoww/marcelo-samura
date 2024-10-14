@@ -33,7 +33,7 @@ function Testemonial({
       className={cn(
         'flex flex-col gap-2.5 items-center p-3 rounded-md border',
         {
-          'col-span-2': isLastItem,
+          'col-span-2 max-md:col-span-1': isLastItem,
         }
       )}
     >
@@ -130,7 +130,7 @@ export function Testemonials() {
       <motion.div
         whileInView={{ opacity: [0, 1], y: [20, 0] }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="w-full grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1"
+        className="w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
       >
         {testemonialsData.map((testemonial, index, arr) => (
           <Testemonial
