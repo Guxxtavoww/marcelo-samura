@@ -21,6 +21,8 @@ import mentoriaEmGrupoImage1 from './pngs/mentoria-em-grupo-image-1.png';
 import mentoriaEmGrupoImage2 from './pngs/mentoria-em-grupo-image-2.png';
 import mentoriaEmpresarialImage1 from './pngs/mentoria-empresarial-image-1.png';
 import mentoriaEmpresarialImage2 from './pngs/mentoria-empresarial-image-2.png';
+import mppImage1 from './pngs/mpp-image-1.png';
+import mppImage2 from './pngs/mpp-image-2.png';
 
 export {
   mentoringProgramImage,
@@ -46,4 +48,6 @@ export {
   mentoriaEmGrupoImage2,
   mentoriaEmpresarialImage1,
   mentoriaEmpresarialImage2,
+  mppImage1,
+  mppImage2,
 };
