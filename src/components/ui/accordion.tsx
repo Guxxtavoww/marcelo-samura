@@ -5,7 +5,7 @@ import {
   type ElementRef,
   type ComponentPropsWithoutRef,
 } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Plus, Minus } from 'lucide-react';
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
 
 import { cn } from '@/utils/cn.util';
@@ -27,25 +27,37 @@ AccordionItem.displayName = 'AccordionItem';
 type AccordionTriggerProps = ComponentPropsWithoutRef<
   typeof AccordionPrimitive.Trigger
 > & {
-  hideChevronIcon?: boolean;
+  hideIcon?: boolean;
+  iconType?: 'default' | 'plus-or-minus';
 };
 
 const AccordionTrigger = forwardRef<
   ElementRef<typeof AccordionPrimitive.Trigger>,
   AccordionTriggerProps
->(({ className, children, hideChevronIcon, ...props }, ref) => (
+>(({ className, children, hideIcon, iconType = 'default', ...props }, ref) => (
   <AccordionPrimitive.Header className="flex">
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        'flex flex-1 items-center justify-center gap-3 py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180',
-        className
+        'flex flex-1 items-center justify-center gap-3 py-4 font-medium transition-all hover:underline ',
+        className,
+        {
+          '[&[data-state=open]>svg]:rotate-180': iconType === 'default',
+          'group': iconType === 'plus-or-minus',
+        }
       )}
       {...props}
     >
       {children}
-      {!hideChevronIcon ? (
-        <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+      {!hideIcon ? (
+        iconType === 'default' ? (
+          <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+        ) : (
+          <>
+            <Plus className="h-4 w-4 shrink-0 transition-transform duration-200 group-data-[state=open]:hidden" />
+            <Minus className="h-4 w-4 shrink-0 transition-transform duration-200 group-data-[state=closed]:hidden" />
+          </>
+        )
       ) : null}
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
