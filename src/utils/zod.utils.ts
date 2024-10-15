@@ -19,8 +19,8 @@ export function createNullableTransform<
  * -----------------------------------------------------------------------------
  */
 export const numberSchema = z.number().safe('Value is not safe');
-export const stringSchema = z.string().trim();
-export const emailStringSchema = stringSchema.email();
+export const stringSchema = z.string({ message: 'Insira um e-mail' }).trim();
+export const emailStringSchema = stringSchema.email('Insira um e-mail válido');
 export const urlStringSchema = stringSchema.url();
 export const uuidSchema = stringSchema.uuid();
 export const orderParamSchema = z.enum(['ASC', 'DESC']);

@@ -25,6 +25,7 @@ export interface InputFieldProps
    * @type `boolean`
    */
   isRequired?: boolean;
+  formItemClassName?: string;
 }
 
 export function InputField({
@@ -35,6 +36,7 @@ export function InputField({
   label,
   disabled,
   isRequired,
+  formItemClassName,
   ...rest
 }: InputFieldProps): JSX.Element {
   const id = useFieldId(name);
@@ -47,7 +49,7 @@ export function InputField({
       defaultValue={defaultValue}
       disabled={disabled}
       render={({ field: { onChange, value = '', ...field } }) => (
-        <FormItem>
+        <FormItem className={formItemClassName}>
           {label ? (
             <FormLabel htmlFor={id} className="relative">
               {label}

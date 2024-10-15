@@ -23,6 +23,8 @@ import mentoriaEmpresarialImage1 from './pngs/mentoria-empresarial-image-1.png';
 import mentoriaEmpresarialImage2 from './pngs/mentoria-empresarial-image-2.png';
 import mppImage1 from './pngs/mpp-image-1.png';
 import mppImage2 from './pngs/mpp-image-2.png';
+import aboutImage from './pngs/about-image.png';
+import aboutLogo from './pngs/about-logo.png';
 
 export {
   mentoringProgramImage,
@@ -50,4 +52,6 @@ export {
   mentoriaEmpresarialImage2,
   mppImage1,
   mppImage2,
+  aboutImage,
+  aboutLogo,
 };
