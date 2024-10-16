@@ -17,7 +17,7 @@ import { Contact } from './_containers/contact';
 
 export default function Home() {
   return (
-    <main className="absolute top-[140px] left-1/2 -translate-x-1/2 w-full max-w-[1428px] px-3 max-md:px-1.5">
+    <>
       <Banner />
       <MentoringProgram />
       <WhatIsSamuraMentorship />
@@ -34,6 +34,6 @@ export default function Home() {
       <Faq />
       <About />
       <Contact />
-    </main>
+    </>
   );
 }

@@ -38,15 +38,15 @@ export function About() {
     <motion.section
       className="container-wrapper space-y-4 [&_p]:text-center [&_p]:text-lg [&_p]:leading-8"
       id="about"
-      initial={{ opacity: 0, y: 50 }} // Animation start
-      whileInView={{ opacity: 1, y: 0 }} // Animation on scroll
-      transition={{ duration: 0.6 }} // Smooth transition
-      viewport={{ once: true }} // Trigger once
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
     >
       <motion.h2
         className="section-heading !text-left"
-        initial={{ opacity: 0, x: -50 }} // Start from the left
-        whileInView={{ opacity: 1, x: 0 }} // Animate into view
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
       >
         SOBRE MIM

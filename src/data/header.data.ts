@@ -24,34 +24,34 @@ export type HeaderData =
 export const headerData: HeaderData[] = [
   {
     linkLabel: 'Início',
-    href: '#',
+    href: '/#',
   },
   {
     linkLabel: 'Mentoria Samura',
     menuLinks: [
       {
         label: 'Pessoal - MP',
-        href: '#personal-mentory-mp',
+        href: '/#personal-mentory-mp',
       },
-      {
-        label: 'Executiva (1 Sessão)- MEP',
-        href: '#mentory',
-      },
+      // {
+      //   label: 'Executiva (1 Sessão)- MEP',
+      //   href: '/#mentory',
+      // },
       {
         label: 'Casais-MC',
-        href: '#couples-mentory-mc',
+        href: '/#couples-mentory-mc',
       },
       {
         label: 'Grupo-MG',
-        href: '#group-mentory-mg',
+        href: '/#group-mentory-mg',
       },
       {
         label: 'Empresarial-ME',
-        href: '#business-mentoring-me',
+        href: '/#business-mentoring-me',
       },
       {
         label: 'Pessoal Premium- MPP',
-        href: '#premium-personal-mentory-mpp',
+        href: '/#premium-personal-mentory-mpp',
       },
     ],
   },
@@ -63,12 +63,15 @@ export const headerData: HeaderData[] = [
         links: [
           {
             label: 'Humanizar',
+            href: '/workshops#humanize',
           },
           {
             label: 'Chutando o Balde',
+            href: '/workshops#kicking-the-bucket',
           },
           {
             label: 'Hakusho',
+            href: '/workshops#hakusho',
           },
         ],
       },
@@ -120,24 +123,24 @@ export const headerData: HeaderData[] = [
     ],
   },
   {
-    linkLabel: 'Testemunhos',
-    href: '#testemonials',
+    linkLabel: 'Histórias de Sucesso',
+    href: '/#testemonials',
   },
   {
     linkLabel: 'Quem Sou Eu',
     menuLinks: [
       {
         label: 'Sobre',
-        href: '#about',
+        href: '/#about',
       },
       {
         label: 'Contato',
-        href: '#contact',
+        href: '/#contact',
       },
     ],
   },
   {
     linkLabel: 'Blog',
-    href: '#blog',
+    href: '/#blog',
   },
 ];

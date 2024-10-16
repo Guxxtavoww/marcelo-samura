@@ -40,7 +40,9 @@ export default async function RootLayout({ children }: WithChildren) {
           disableTransitionOnChange
         >
           <Header />
-          {children}
+          <main className="absolute top-[140px] left-1/2 -translate-x-1/2 w-full max-w-[1428px] px-3 max-md:px-1.5">
+            {children}
+          </main>
           <Toaster />
         </Providers>
       </body>

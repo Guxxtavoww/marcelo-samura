@@ -25,6 +25,8 @@ import mppImage1 from './pngs/mpp-image-1.png';
 import mppImage2 from './pngs/mpp-image-2.png';
 import aboutImage from './pngs/about-image.png';
 import aboutLogo from './pngs/about-logo.png';
+import workshopsBannerImage from './pngs/workshops-banner-image.png';
+import workshopsKickingTheBucketImage from './pngs/workshops-kicking-the-bucket-image.png';
 
 export {
   mentoringProgramImage,
@@ -54,4 +56,6 @@ export {
   mppImage2,
   aboutImage,
   aboutLogo,
+  workshopsBannerImage,
+  workshopsKickingTheBucketImage,
 };
