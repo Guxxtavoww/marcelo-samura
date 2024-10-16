@@ -40,7 +40,7 @@ export function Contact() {
       >
         <Link
           href={`tel:${phoneNumber}`}
-          className="font-semibold text-xl hover:underline text-[#a73520]"
+          className="font-semibold text-3xl hover:underline text-[#a73520]"
         >
           {phoneNumber}
         </Link>
@@ -52,7 +52,7 @@ export function Contact() {
       >
         <Link
           href={`mailto:${email}`}
-          className="font-semibold text-xl hover:underline text-[#264653]"
+          className="font-semibold text-3xl hover:underline text-[#264653]"
         >
           {email}
         </Link>

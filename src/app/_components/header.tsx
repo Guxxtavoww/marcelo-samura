@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <motion.header
-      className="fixed top-0 left-0 min-w-full h-[140px] gap-1.5 px-5 flex justify-center items-center z-30 border-b bg-background max-md:px-2"
+      className="fixed top-0 left-0 min-w-full h-[155px] gap-1.5 px-5 flex justify-center items-center z-30 border-b bg-background max-md:px-2 max-md:h-[80px]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

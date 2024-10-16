@@ -8,9 +8,9 @@ import { HeaderParentHoverCard } from './header-hover-cards';
 
 export function DefaultHeader({ headerData }: { headerData: HeaderData[] }) {
   return (
-    <div className="mx-auto w-full max-w-[1428px] flex flex-col items-center">
+    <div className="mx-auto w-full max-w-[1428px] flex flex-col items-center gap-2.5">
       <Link href="#" className="cursor-pointer">
-        <Image src="/logo.png" alt="Logo" width={200} height={80} priority />
+        <Image src="/logo.png" alt="Logo" width={235} height={80} priority />
       </Link>
       <div className="flex items-center justify-center gap-10 flex-wrap w-full">
         {headerData.map((parentLink, parentIndex) => {

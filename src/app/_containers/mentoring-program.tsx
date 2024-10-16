@@ -42,7 +42,7 @@ export function MentoringProgram() {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       >
-        <p className="text-2xl text-center font-extrabold max-w-[500px]">
+        <p className="text-3xl text-center font-bold max-w-[500px]">
           Desvendar a Si Mesmo! <br /> Este é o único trabalho para uma alma
           transformar a sua jornada de vida <br />
           <span className="text-xl font-normal">Marcello Samura</span>

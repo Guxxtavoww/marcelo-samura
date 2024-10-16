@@ -53,6 +53,10 @@ export const headerData: HeaderData[] = [
         label: 'Pessoal Premium- MPP',
         href: '/#premium-personal-mentory-mpp',
       },
+      {
+        label: 'Histórias de Sucesso',
+        href: '/#testemonials',
+      },
     ],
   },
   {
@@ -61,6 +65,10 @@ export const headerData: HeaderData[] = [
       {
         label: 'Treinamento',
         links: [
+          {
+            label: 'Início',
+            href: '/workshops',
+          },
           {
             label: 'Humanizar',
             href: '/workshops#humanize',
@@ -121,10 +129,6 @@ export const headerData: HeaderData[] = [
         href: '#thief',
       },
     ],
-  },
-  {
-    linkLabel: 'Histórias de Sucesso',
-    href: '/#testemonials',
   },
   {
     linkLabel: 'Quem Sou Eu',

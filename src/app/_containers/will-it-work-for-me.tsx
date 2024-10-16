@@ -35,9 +35,9 @@ export function WillItWorkForMe() {
           <motion.div
             key={index}
             className={cn(
-              'flex flex-col transition-all items-center min-h-[313px] gap-3 border rounded-md p-3 hover:bg-slate-50',
+              'flex flex-col transition-all items-center justify-center min-h-[323px] gap-3 border rounded-md p-3 hover:bg-slate-50',
               {
-                'col-span-2': arr.length - 1 === index,
+                'col-span-2 max-md:col-span-1': arr.length - 1 === index,
               }
             )}
             initial={{ opacity: 0 }}
@@ -50,6 +50,7 @@ export function WillItWorkForMe() {
               alt={item.title}
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              className="max-h-[60px]"
             />
             <h3 className="text-[#a73520] text-2xl text-center font-bold">
               {item.title}

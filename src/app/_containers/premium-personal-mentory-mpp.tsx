@@ -68,7 +68,7 @@ export function PremiumPersonalMentoryMPP() {
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="shadow-lg rounded-md mx-auto"
+        className="shadow-lg rounded-md mx-auto min-w-[455px] max-md:min-w-fit"
       />
       <motion.p
         className="font-medium text-lg leading-10"
@@ -80,10 +80,14 @@ export function PremiumPersonalMentoryMPP() {
         transformação. Imagine não apenas sobreviver, mas prosperar. Imagine
         redescobrir o propósito, encontrar satisfação na carreira, restaurar
         relacionamentos e fazer a diferença no mundo. Você não precisa enfrentar
-        isso sozinho. Com coragem para explorar novos caminhos, buscar...
+        isso sozinho. Tenha coragem para explorar novos caminhos, buscar apoio e
+        aprender com as adversidades, é possível encontrar clareza e direção. A
+        jornada para uma vida com significado começa com um passo de cada vez.
+        Não desista de si mesmo. Invista em sua própria jornada de
+        autodescoberta e transformação hoje.
       </motion.p>
       <motion.h4
-        className="text-2xl font-bold"
+        className="text-2xl font-bold !mb-6"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.6 }}
@@ -97,7 +101,7 @@ export function PremiumPersonalMentoryMPP() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="shadow-lg rounded-md"
+          className="shadow-lg rounded-md min-w-[372px] max-md:min-w-fit"
         />
         <motion.div
           className="flex-[1] space-y-4"
@@ -151,6 +155,7 @@ export function PremiumPersonalMentoryMPP() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.1 }}
+        className='font-medium'
       >
         Você tem uma vida como sempre sonhou? Está se dando a oportunidade de
         viver realmente o que você é, livre para realizar qualquer coisa que

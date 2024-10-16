@@ -55,6 +55,7 @@ export function About() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
+        className="font-medium"
       >
         Marcello Samura é empresário, escritor, mentor e palestrante com um now
         hall de 30 anos de carreira do mundo corporativo e mais de 6 anos de
@@ -68,6 +69,7 @@ export function About() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
+        className="font-medium"
       >
         Com três décadas de experiência em negócios e gestão de pessoas,
         desenvolveu a metodologia Hakusho, inserida no curso Hikari, que foca no
@@ -92,6 +94,7 @@ export function About() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.5 }}
+        className="font-medium"
       >
         “O conhecimento é o alimento da alma e a solução para a sua
         vida”.Marcello Samura A jornada de um escritor é emocionante, cheia de

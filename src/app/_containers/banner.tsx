@@ -17,7 +17,7 @@ export function Banner() {
         viewport={{ once: true }}
       >
         <motion.h2
-          className="text-5xl font-semibold max-md:text-center"
+          className="text-6xl font-semibold max-md:text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
