@@ -84,19 +84,23 @@ export const headerData: HeaderData[] = [
         ],
       },
       {
-        label: 'Pàlestra',
+        label: 'Pàlestras',
         links: [
           {
             label: 'Ser + Humano',
+            href: '/lectures#be-more-human',
           },
           {
             label: 'Comportamento Humano',
+            href: '/lectures#human-behavior',
           },
           {
             label: 'Drogas na sua Família',
+            href: '/lectures#family-drugs',
           },
           {
             label: 'Drogas na sua Empresa',
+            href: '/lectures#company-drugs',
           },
         ],
       },
