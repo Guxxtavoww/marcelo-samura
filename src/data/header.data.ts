@@ -112,10 +112,8 @@ export const headerData: HeaderData[] = [
         label: 'Cursos',
         links: [
           {
-            label: 'Empreendedorismo',
-          },
-          {
             label: 'Hikari',
+            href: '/courses#hikari',
           },
         ],
       },

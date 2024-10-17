@@ -80,11 +80,11 @@
   }
 
   section.container-wrapper {
-    @apply w-full min-h-[calc(100svh-140px)] py-5 scroll-mt-[140px];
+    @apply w-full min-h-[calc(100svh-155px)] py-5 scroll-mt-[155px] max-md:min-h-[calc(100svh-80px)] max-md:scroll-mt-[80px];
   }
 
   .section-heading {
-    @apply text-4xl font-bold text-[#264653] text-center;
+    @apply text-4xl font-bold text-[#264653] text-center [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)];
   }
 
   p {

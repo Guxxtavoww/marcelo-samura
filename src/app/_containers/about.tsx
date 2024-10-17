@@ -3,7 +3,7 @@
 import { z } from 'zod';
 import { motion } from 'framer-motion';
 
-import { aboutImage, aboutLogo } from '@/assets';
+import { aboutCrowdImage, aboutImage, aboutLogo } from '@/assets';
 import { Form } from '@/components/ui/form';
 import { Button } from '@/components/ui/button';
 import { Loader } from '@/components/tools/loader';
@@ -43,6 +43,70 @@ export function About() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
+      <div className="flex flex-col gap-6 text-center items-center !mb-6">
+        <motion.h2
+          className="section-heading"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          TRANSFORMANDO VIDAS E CURANDO ALMAS
+        </motion.h2>
+        <div className="flex items-center gap-6 max-md:flex-col">
+          <motion.img
+            src={aboutCrowdImage.src}
+            alt="Crowd"
+            className="rounded-md shadow-lg"
+            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.5 }}
+          />
+          <motion.div
+            className="flex flex-col items-center gap-3.5 max-md:text-center"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <motion.h5
+              className="text-xl font-bold"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              Sobre
+            </motion.h5>
+            <motion.p
+              className="!text-justify leading-8 text-lg font-medium max-md:text-center"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              Olá, eu sou Marcello Samura. Sou grato por você estar visitando
+              nossa página de desenvolvimento Pessoal e Espiritual, nela
+              descrevo sobre conteúdos que demonstram como parar de sobreviver
+              mediante a dor e sofrimento. Demonstro como viver uma vida melhor,
+              mesmo diante dos diversos desafios que ela nos coloca.
+            </motion.p>
+            <motion.p
+              className="font-normal text-center"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              Transforme a sua vida com conteúdo exclusivo: Junte-se à minha
+              lista de e-mails e receba os melhores insights diretamente na sua
+              caixa de entrada!
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <Button size="lg">Acesse Agora</Button>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
       <motion.h2
         className="section-heading !text-left"
         initial={{ opacity: 0, x: -50 }}
