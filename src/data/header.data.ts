@@ -102,6 +102,10 @@ export const headerData: HeaderData[] = [
             label: 'Drogas na sua Empresa',
             href: '/lectures#company-drugs',
           },
+          {
+            label: 'Empreendedorismo',
+            href: '/lectures#entrepreneurship',
+          },
         ],
       },
       {

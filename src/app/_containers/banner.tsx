@@ -14,24 +14,21 @@ export function Banner() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        viewport={{ once: true }}
       >
         <motion.h2
-          className="text-6xl font-semibold max-md:text-center"
+          className="text-[38px] font-semibold leading-10 max-md:text-center max-md:text-3xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
-          viewport={{ once: true }}
         >
           Domine as Maiores Ferramentas de Desenvolvimento Pessoal e Espiritual
           da Internet.
         </motion.h2>
         <motion.p
-          className="text-lg max-md:text-center"
+          className="text-lg font-medium max-md:text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
-          viewport={{ once: true }}
         >
           Aprimore sua vida pessoal e espiritual com técnicas poderosas de
           transformação.
@@ -40,7 +37,6 @@ export function Banner() {
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: 'easeOut' }}
-          viewport={{ once: true }}
         >
           <Button className="mt-3 flex items-center gap-2" size="lg">
             <FaWhatsapp className="text-white text-xl" /> QUERO ENTRAR NA
@@ -52,7 +48,6 @@ export function Banner() {
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
-        viewport={{ once: true }}
       >
         <motion.img
           src={bannerImage.src}
@@ -60,7 +55,6 @@ export function Banner() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
-          viewport={{ once: true }}
           className="rounded-sm"
         />
       </motion.div>
