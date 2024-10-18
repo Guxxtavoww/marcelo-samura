@@ -120,19 +120,19 @@ export const headerData: HeaderData[] = [
     ],
   },
   {
-    linkLabel: 'Ebook',
+    linkLabel: 'Ebooks',
     menuLinks: [
       {
         label: 'A Casa de Moá',
-        href: '#moa',
+        href: '/ebooks#moas-house',
       },
       {
         label: 'Escravidão Tecnológica',
-        href: '#moa',
+        href: '/ebooks#tech-slavery',
       },
       {
         label: 'Quem é o ladrão?',
-        href: '#thief',
+        href: '/ebooks#whos-the-thief',
       },
     ],
   },

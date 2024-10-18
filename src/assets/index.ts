@@ -29,6 +29,9 @@ import aboutLogo from './pngs/about-logo.png';
 import workshopsBannerImage from './pngs/workshops-banner-image.png';
 import workshopsKickingTheBucketImage from './pngs/workshops-kicking-the-bucket-image.png';
 import hikariLogoImage from './pngs/hikari-logo-image.png';
+import moasHouseEbook from './pngs/moas-house-ebook.png';
+import techSlaveryEbook from './pngs/tech-slavery-ebook.png';
+import whosTheThiefEbook from './pngs/whos-the-thief-ebook.png';
 
 export {
   mentoringProgramImage,
@@ -62,4 +65,7 @@ export {
   workshopsKickingTheBucketImage,
   aboutCrowdImage,
   hikariLogoImage,
+  moasHouseEbook,
+  techSlaveryEbook,
+  whosTheThiefEbook,
 };
